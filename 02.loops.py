@@ -52,7 +52,7 @@ for mn in range(1,4): # 1 2 3
 
 
 # input
-x = input('enter number ')
+x = input('enter number: ')
 
 mynumber = int( input('enter number : '))
 print(type(mynumber))
@@ -68,14 +68,14 @@ for x in range(1,11):
     if x == 6:
         break
     print(x)
-print('wellcome')
+print('welcome')
 
 # Continue
 for x in range(1,11):
     if x == 6:
         continue
     print(x)
-print('wellcome')
+print('welcome')
 
 
 
