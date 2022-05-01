@@ -1,0 +1,64 @@
+#functions
+# functions structure
+
+# ---------------
+# def func_mame(parameters):
+
+#     func_body : logic
+
+#     return target
+# ---------------
+
+def mysum (x,y): # arguments , parameters
+    print (x+y)
+
+mysum(5,7)
+
+def mysum (x,y): # arguments , parameters
+    print (x+y)
+
+mysum(y=5,x=7)
+
+
+def mysum (x=1,y=1): # arguments , parameters
+    print (x+y)
+
+mysum(5)
+
+
+
+def mysum(x,y):
+    result = x+y
+    return result
+x= mysum(3,4)
+print (f'x = {x}')
+    
+
+
+
+#local VS global
+
+f = 0
+print (f)
+
+def do ():
+    global f
+    f = 5      # local
+    print (f)
+
+do()
+
+print (f)
+
+# anonymous function
+#func_mame = lambda parameters : logic
+
+
+mysum = lambda x,y : x+y
+
+x= mysum (3,4)
+print (x)
+
+
+for index , x in enumerate(range (10,20),1):
+    print (index , x)
