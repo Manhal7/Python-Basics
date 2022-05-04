@@ -45,10 +45,8 @@ class Game:
                     self.multiplacation_table(start,end,step_start ,step_end)
                 
                 elif int(user_choice) == 2:
-                    self.remove_duplacate()
-                
-                else:
-                    print("Enter 1 or 2")
+                    self.remove_duplacate()   
+
 
 
     def multiplacation_table(self,start,end,step_start ,step_end):
