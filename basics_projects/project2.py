@@ -3,10 +3,8 @@ def words_count():
     y = phrase.split(" ")
     b = []
     for i in y :
-        if i in b:
-            continue
-        else:
+        if i not in b:
             b.append(i)
-    print(len(b))
+    return print(len(b))
 
 words_count()
