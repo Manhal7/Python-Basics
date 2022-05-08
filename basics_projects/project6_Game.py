@@ -2,14 +2,14 @@ class Game():
     def __init__(self):
         while True:
             print('''
-    Welcome in our game
-    choose one of our games
-            1 : odd_even
-            2 : words_count
-            3 : num_range
-            4 : dividing_1
-            5 : dividing_2
-        Press X to exit''')
+Welcome in our game
+choose one of our games
+        1 : odd_even
+        2 : words_count
+        3 : num_range
+        4 : dividing_1
+        5 : dividing_2
+    Press X to exit''')
             user_choice = input("Enter game number : ")
             if user_choice == "X":
                 print("hope you enjoy ^_^")
@@ -46,9 +46,7 @@ class Game():
         y = phrase.split(" ")
         b = []
         for i in y :
-            if i in b:
-                continue
-            else:
+            if i not in b:
                 b.append(i)
         print(len(b))
 
